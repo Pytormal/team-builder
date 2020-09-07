@@ -36,9 +36,5 @@
     transform: rotate(360deg);
   }
 }
-//
+/* // */
 
-.member-list {
-  display: flex;
-  flex-wrap: wrap;
-}

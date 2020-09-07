@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import "./form.css"
+
 
 const Form = (props) => {
   console.log("form propp: ", props);
@@ -24,22 +26,22 @@ const Form = (props) => {
     };
 
     return (
-        <form onSubmit={submitForm}>
-            <label htmlFor='name'>Name</label>
+        <form className='form' onSubmit={submitForm}>
+            <label className='name labels' htmlFor='name'>Name</label>
             <input
                 type='text'
                 name='name'
                 value={list.name}
                 onChange={changeHandler}
                 />
-            <label htmlFor='email'>Email</label>
+            <label className='email labels' htmlFor='email'>Email</label>
             <input
                 type='text'
                 name='email'
                 value={list.email}
                 onChange={changeHandler}
             />
-            <label htmlFor='role'>Role</label>
+            <label className='role labels'  htmlFor='role'>Role</label>
             <input
                 type='text'
                 name='role'
@@ -47,7 +49,7 @@ const Form = (props) => {
                 onChange={changeHandler}
             />
 
-            <button type='submit'>Add new team member</button>
+            <button className='button' type='submit'>Add new team member</button>
         </form>
     )
 
